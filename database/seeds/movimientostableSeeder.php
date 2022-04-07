@@ -19,5 +19,12 @@ class movimientostableSeeder extends Seeder
             'cat_id'=>'1',
             'usu_id'=>'1',
         ]);
+         DB::table('movimientostable')->insert([
+            'mov_detalle'=>'Alimentacion',
+            'mov_valor'=>'50',
+            'mov_fecha'=>'2022-04-06',
+            'cat_id'=>'2',
+            'usu_id'=>'1',
+        ]);
     }
 }

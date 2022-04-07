@@ -13,8 +13,12 @@ class categoryTableSeeder extends Seeder
     public function run()
     {
         DB::table('CategoryTable')->insert([
-            'cat_nombre'=>'Servicios Basicos',
+            'cat_nombre'=>'Ingreso ',
             'cat_tipo'=>'1',
+        ]);
+        DB::table('CategoryTable')->insert([
+            'cat_nombre'=>'Egreso ',
+            'cat_tipo'=>'2',
         ]);
     }
 }
